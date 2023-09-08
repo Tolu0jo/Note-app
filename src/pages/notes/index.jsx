@@ -1,0 +1,24 @@
+import Link from 'next/link'
+import React from 'react'
+
+const Page = () => {
+  const notes = new Array(15).fill(1).map ((e,i)=>({
+    id:i,title:`Note ${i}`
+  }))
+  return (
+    <div>
+      <h1>Notes</h1>
+      {notes.map(note =>(
+        <div>
+      <Link key = {note.id} href="/notes/[...params]" as ={`/notes/${note.id}`}>
+     <strong>{note.title}</strong>
+      </Link> 
+        </div>
+     
+      ))}
+      
+        </div>
+  )
+}
+
+export default Page
