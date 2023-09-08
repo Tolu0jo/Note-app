@@ -2,10 +2,10 @@ import React from 'react'
 import { useRouter } from 'next/router'
 const page = () => {
   const router = useRouter()
-  const {id}=router.query
-
+  const {params}=router.query
+ console.log(params)
   return (
-    <div>notes:{id}</div>
+    <div>notes:{params}</div>
   )
 }
 
