@@ -4,7 +4,7 @@ import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
 
-console.log(publicRuntimeConfig.APP_URL);
+
 const Nav = () => (
     <header sx={{height: '60px', width: '100vw', bg: 'primary', borderBottom: '1px solid', borderColor: 'primary'}}>
     <nav sx={{display: 'flex', alignItems: 'center',  justifyContent: 'space-between', variant: 'containers.page', height: '100%'}}>

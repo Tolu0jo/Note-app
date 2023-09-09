@@ -4,6 +4,7 @@
     "@theme-ui/presets": "^0.16.1",
     "dotenv-load": "^3.0.0",
     "next": "^13.4.19",
+    "next-connect": "^1.0.0",
     "next-env": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -13,5 +14,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
+    "typescript": "^5.2.2"
   }
 }
