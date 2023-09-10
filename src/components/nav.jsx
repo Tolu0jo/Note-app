@@ -1,9 +1,9 @@
 /** @jsxImportSource theme-ui */
 import Link from 'next/link'
 import getConfig from 'next/config';
-
 const { publicRuntimeConfig } = getConfig();
 
+console.log(publicRuntimeConfig)
 
 const Nav = () => (
     <header sx={{height: '60px', width: '100vw', bg: 'primary', borderBottom: '1px solid', borderColor: 'primary'}}>

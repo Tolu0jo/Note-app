@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
-
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 import Link from 'next/link'
 
  const Page = ({notes}) => {
@@ -30,7 +31,8 @@ import Link from 'next/link'
 export default Page;
 
  export const getServerSideProps = async()=>{
-  const res = await fetch("http://localhost:3000/api/notes")
+  console.log(process.env.APP_URL)
+  const res = await fetch(`${process.env.APP_URL}/api/notes`)
   const {data} = await res.json()
  
   return {
