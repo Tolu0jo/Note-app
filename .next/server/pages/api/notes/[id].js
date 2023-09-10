@@ -69,7 +69,7 @@ eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__
   \**************************/
 /***/ ((module) => {
 
-eval("\nconst notes = [];\nmodule.exports = notes;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9zcmMvZGF0YS9kYXRhLmpzIiwibWFwcGluZ3MiOiI7QUFBQSxNQUFNQSxRQUFRLEVBQUU7QUFFaEJDLE9BQU9DLE9BQU8sR0FBR0YiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvZGF0YS9kYXRhLmpzPzRmMzQiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3Qgbm90ZXMgPSBbXTtcblxubW9kdWxlLmV4cG9ydHMgPSBub3RlcyJdLCJuYW1lcyI6WyJub3RlcyIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./src/data/data.js\n");
+eval("\nconst notes = new Array(15).fill(1).map((_, i)=>({\n        id: Date.now() + i,\n        title: `Note ${i}`\n    }));\nmodule.exports = notes;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9zcmMvZGF0YS9kYXRhLmpzIiwibWFwcGluZ3MiOiI7QUFBQSxNQUFNQSxRQUFRLElBQUlDLE1BQU0sSUFDdkJDLElBQUksQ0FBQyxHQUNMQyxHQUFHLENBQUMsQ0FBQ0MsR0FBRUMsSUFBSztRQUNUQyxJQUFJQyxLQUFLQyxHQUFHLEtBQUtIO1FBQ2pCSSxPQUFPLENBQUMsS0FBSyxFQUFFSixFQUFFLENBQUM7SUFDdEI7QUFFQUssT0FBT0MsT0FBTyxHQUFHWCIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9kYXRhL2RhdGEuanM/NGYzNCJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBub3RlcyA9IG5ldyBBcnJheSgxNSlcbi5maWxsKDEpXG4ubWFwKChfLGkpPT4oe1xuICAgIGlkOiBEYXRlLm5vdygpICsgaSxcbiAgICB0aXRsZTogYE5vdGUgJHtpfWBcbn0pKVxuXG5tb2R1bGUuZXhwb3J0cyA9IG5vdGVzIl0sIm5hbWVzIjpbIm5vdGVzIiwiQXJyYXkiLCJmaWxsIiwibWFwIiwiXyIsImkiLCJpZCIsIkRhdGUiLCJub3ciLCJ0aXRsZSIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./src/data/data.js\n");
 
 /***/ }),
 

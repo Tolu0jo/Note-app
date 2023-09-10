@@ -2,8 +2,8 @@
 
 import Link from 'next/link'
 
- const Page = () => {
-  const notes = new Array(15).fill(1).map((e, i) => ({id: i, title: `This is my note ${i}`}))
+ const Page = ({notes}) => {
+  // const notes = new Array(15).fill(1).map((e, i) => ({id: i, title: `This is my note ${i}`}))
 
   return (
     <div sx={{variant: 'containers.page'}}>
@@ -28,3 +28,12 @@ import Link from 'next/link'
 
 
 export default Page;
+
+ export const getServerSideProps = async()=>{
+  const res = await fetch("http://localhost:3000/api/notes")
+  const {data} = await res.json()
+ 
+  return {
+      props:{notes:data}
+  }
+}
